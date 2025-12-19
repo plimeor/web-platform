@@ -48,7 +48,7 @@ web-platform/
 ### Prerequisites
 
 - Node.js v24+
-- pnpm v9+
+- pnpm v10+
 
 ### Installation
 
