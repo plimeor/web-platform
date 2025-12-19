@@ -37,7 +37,7 @@ web-platform/
 
 ## 🛠️ Tech Stack
 
-- **Monorepo**: pnpm workspaces + Nx
+- **Monorepo**: pnpm workspaces + Turborepo
 - **Code quality**: Biome (formatter + linter)
 - **Language**: TypeScript (optional per project)
 - **Git hooks**: husky
@@ -59,23 +59,26 @@ pnpm install
 ### Common Commands
 
 ```bash
-# Format code
-pnpm format
+# Build all projects
+pnpm build
 
-# Lint code
+# Dev mode for all projects
+pnpm dev
+
+# Lint all projects
 pnpm lint
-
-# Check and fix (format + lint)
-pnpm check
 
 # Type check all projects
 pnpm typecheck
 
-# Run a task across all projects
-nx run-many -t <target>
+# Format code (entire monorepo)
+pnpm format
 
-# Show project graph
-nx graph
+# Check and fix (format + lint)
+pnpm check
+
+# Clean all build outputs
+pnpm clean
 ```
 
 ## 📦 Adding New Projects
