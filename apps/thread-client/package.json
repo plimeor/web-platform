@@ -1,0 +1,29 @@
+{
+  "name": "@repo/thread-client",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check src"
+  },
+  "dependencies": {
+    "@clerk/clerk-react": "^5.20.0",
+    "@elysiajs/eden": "^1.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.5.1",
+    "babel-plugin-react-compiler": "latest",
+    "elysia": "^1.2.12",
+    "typescript": "^5.7.2",
+    "vite": "npm:rolldown-vite@7.2.2"
+  }
+}
