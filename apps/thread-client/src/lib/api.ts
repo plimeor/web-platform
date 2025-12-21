@@ -14,6 +14,6 @@ export function createAuthenticatedApi(getToken: () => Promise<string | null>) {
         headers.set('Authorization', `Bearer ${token}`)
         return { ...options, headers }
       }
-    },
+    }
   })
 }

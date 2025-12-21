@@ -11,18 +11,18 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <ConversationsPage />,
+        element: <ConversationsPage />
       },
       {
         path: 'chat',
-        element: <ChatPage />,
+        element: <ChatPage />
       },
       {
         path: 'chat/:conversationId',
-        element: <ChatPage />,
-      },
-    ],
-  },
+        element: <ChatPage />
+      }
+    ]
+  }
 ])
 
 export function App() {

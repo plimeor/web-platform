@@ -6,16 +6,16 @@ export default defineConfig({
   plugins: [
     react({
       babel: {
-        plugins: ['babel-plugin-react-compiler'],
-      },
-    }),
+        plugins: ['babel-plugin-react-compiler']
+      }
+    })
   ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src'),
-    },
+      '@': resolve(__dirname, './src')
+    }
   },
   server: {
-    port: 5173,
-  },
+    port: 5173
+  }
 })

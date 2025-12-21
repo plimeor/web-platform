@@ -35,7 +35,7 @@ export function useChat(conversationId?: string) {
           data.messages.map(
             (m: { id: string; role: 'user' | 'assistant'; content: string; createdAt: Date }) => ({
               ...m,
-              createdAt: m.createdAt.toString(),
+              createdAt: m.createdAt.toString()
             })
           )
         )
@@ -53,7 +53,7 @@ export function useChat(conversationId?: string) {
 
       const { data, error: apiError } = await api.api.chat.send.post({
         conversationId: currentConversationId,
-        content,
+        content
       })
 
       if (apiError || !data) {
@@ -70,11 +70,11 @@ export function useChat(conversationId?: string) {
 
       const userMsg: Message = {
         ...data.userMessage,
-        createdAt: data.userMessage.createdAt.toString(),
+        createdAt: data.userMessage.createdAt.toString()
       }
       const assistantMsg: Message = {
         ...data.assistantMessage,
-        createdAt: data.assistantMessage.createdAt.toString(),
+        createdAt: data.assistantMessage.createdAt.toString()
       }
 
       setMessages((prev) => [...prev, userMsg, assistantMsg])
@@ -92,6 +92,6 @@ export function useChat(conversationId?: string) {
     error,
     currentConversationId,
     loadMessages,
-    sendMessage,
+    sendMessage
   }
 }

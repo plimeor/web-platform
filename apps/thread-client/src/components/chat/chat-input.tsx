@@ -40,7 +40,7 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
             border: '1px solid #ddd',
             resize: 'none',
             fontFamily: 'inherit',
-            fontSize: 'inherit',
+            fontSize: 'inherit'
           }}
         />
         <button
@@ -53,7 +53,7 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
             background: '#007bff',
             color: 'white',
             cursor: disabled ? 'not-allowed' : 'pointer',
-            opacity: disabled ? 0.5 : 1,
+            opacity: disabled ? 0.5 : 1
           }}
         >
           Send

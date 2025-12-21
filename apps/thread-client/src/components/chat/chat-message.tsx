@@ -17,7 +17,7 @@ export function ChatMessage({ message }: ChatMessageProps) {
       style={{
         display: 'flex',
         justifyContent: isUser ? 'flex-end' : 'flex-start',
-        marginBottom: '1rem',
+        marginBottom: '1rem'
       }}
     >
       <div
@@ -26,7 +26,7 @@ export function ChatMessage({ message }: ChatMessageProps) {
           padding: '0.75rem 1rem',
           borderRadius: '1rem',
           background: isUser ? '#007bff' : '#f0f0f0',
-          color: isUser ? 'white' : 'inherit',
+          color: isUser ? 'white' : 'inherit'
         }}
       >
         <div style={{ whiteSpace: 'pre-wrap' }}>{message.content}</div>
@@ -35,7 +35,7 @@ export function ChatMessage({ message }: ChatMessageProps) {
             fontSize: '0.75rem',
             opacity: 0.7,
             marginTop: '0.25rem',
-            textAlign: 'right',
+            textAlign: 'right'
           }}
         >
           {new Date(message.createdAt).toLocaleTimeString()}

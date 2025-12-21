@@ -1,5 +1,13 @@
 {
   "permissions": {
-    "allow": ["Bash(ls:*)"]
+    "allow": [
+      "Bash(ls:*)",
+      "Edit(apps/thread-server/src/**)",
+      "Bash(pnpm typecheck:*)",
+      "Bash(tree apps/thread-server/src -I 'node_modules|dist' -L 3)",
+      "Bash(pnpm build:*)",
+      "Bash(mkdir -p apps/thread-server/src/modules/auth)",
+      "Edit(apps/thread-server/src/modules/auth/**)"
+    ]
   }
 }

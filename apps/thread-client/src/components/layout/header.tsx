@@ -8,7 +8,7 @@ export function Header() {
         justifyContent: 'flex-end',
         alignItems: 'center',
         padding: '0.75rem 1rem',
-        borderBottom: '1px solid #ddd',
+        borderBottom: '1px solid #ddd'
       }}
     >
       <UserButton afterSignOutUrl="/" />

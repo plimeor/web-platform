@@ -20,7 +20,7 @@ export function ConversationsPage() {
         setConversations(
           data.conversations.map((c: { id: string; title: string | null; createdAt: Date }) => ({
             ...c,
-            createdAt: c.createdAt.toString(),
+            createdAt: c.createdAt.toString()
           }))
         )
       }
@@ -44,7 +44,7 @@ export function ConversationsPage() {
             background: '#007bff',
             color: 'white',
             textDecoration: 'none',
-            borderRadius: '4px',
+            borderRadius: '4px'
           }}
         >
           New Chat
@@ -64,7 +64,7 @@ export function ConversationsPage() {
                   border: '1px solid #ddd',
                   borderRadius: '4px',
                   textDecoration: 'none',
-                  color: 'inherit',
+                  color: 'inherit'
                 }}
               >
                 <strong>{conv.title || 'Untitled'}</strong>

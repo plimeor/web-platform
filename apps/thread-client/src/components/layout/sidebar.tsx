@@ -7,7 +7,7 @@ export function Sidebar() {
         width: '250px',
         background: '#f5f5f5',
         borderRight: '1px solid #ddd',
-        padding: '1rem',
+        padding: '1rem'
       }}
     >
       <div style={{ fontWeight: 'bold', fontSize: '1.25rem', marginBottom: '1rem' }}>Thread</div>
@@ -21,7 +21,7 @@ export function Sidebar() {
                 padding: '0.5rem',
                 textDecoration: 'none',
                 color: 'inherit',
-                borderRadius: '4px',
+                borderRadius: '4px'
               }}
             >
               Conversations
@@ -35,7 +35,7 @@ export function Sidebar() {
                 padding: '0.5rem',
                 textDecoration: 'none',
                 color: 'inherit',
-                borderRadius: '4px',
+                borderRadius: '4px'
               }}
             >
               New Chat
