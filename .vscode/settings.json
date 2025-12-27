@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "typescript.experimental.useTsgo": true,
+  "files.associations": { "*.tsconfig.json": "jsonc" },
+  "biome.enabled": false,
+  "eslint.enable": false,
+  "prettier.enable": false
+}

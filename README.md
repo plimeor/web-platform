@@ -37,48 +37,36 @@ web-platform/
 
 ## 🛠️ Tech Stack
 
-- **Monorepo**: pnpm workspaces + Turborepo
-- **Code quality**: Biome (formatter + linter)
-- **Language**: TypeScript (optional per project)
+- **Monorepo**: Bun workspaces
+- **Code quality**: Oxc (oxfmt + oxlint)
+- **Language**: TypeScript with @typescript/native-preview
 - **Git hooks**: husky
-- **Node.js**: v24+
+- **Node.js**: v24+ (LTS)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js v24+
-- pnpm v10+
+- Node.js v24+ (LTS)
+- Bun v1.3+
 
 ### Installation
 
 ```bash
-pnpm install
+bun install
 ```
 
 ### Common Commands
 
 ```bash
-# Build all projects
-pnpm build
-
-# Dev mode for all projects
-pnpm dev
-
 # Lint all projects
-pnpm lint
-
-# Type check all projects
-pnpm typecheck
+bun run lint
 
 # Format code (entire monorepo)
-pnpm format
+bun run format
 
 # Check and fix (format + lint)
-pnpm check
-
-# Clean all build outputs
-pnpm clean
+bun run check
 ```
 
 ## 📦 Adding New Projects
@@ -88,10 +76,11 @@ pnpm clean
 ```bash
 mkdir -p apps/my-app
 cd apps/my-app
-pnpm init
+bun init
 ```
 
 Update `apps/my-app/package.json`:
+
 ```json
 {
   "name": "@repo/my-app",
@@ -105,10 +94,11 @@ Update `apps/my-app/package.json`:
 ```bash
 mkdir -p packages/my-package
 cd packages/my-package
-pnpm init
+bun init
 ```
 
 Update `packages/my-package/package.json`:
+
 ```json
 {
   "name": "@repo/my-package",
